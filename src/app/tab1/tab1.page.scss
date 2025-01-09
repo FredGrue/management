@@ -1,0 +1,33 @@
+ion-card {
+    height: 200px; /* Nur die Höhe bleibt festgelegt */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  ion-card.active {
+    border: 2px solid var(--ion-color-primary);
+    box-shadow: 0 0 10px var(--ion-color-primary);
+    transform: scale(1.05);
+  }
+  
+  ion-card ion-icon {
+    font-size: 48px;
+  }
+  
+  ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  ion-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

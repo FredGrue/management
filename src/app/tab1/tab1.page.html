@@ -1,0 +1,97 @@
+<!-- 
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Scenarios
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card
+          (click)="selectScenario(1)"
+          [class.active]="activeScenario === 1"
+        >
+          <ion-card-header>
+            <ion-card-title>Scenario 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-icon name="flame" size="large"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card
+          (click)="selectScenario(2)"
+          [class.active]="activeScenario === 2"
+        >
+          <ion-card-header>
+            <ion-card-title>Scenario 2</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-icon name="snow" size="large"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card
+          (click)="selectScenario(3)"
+          [class.active]="activeScenario === 3"
+        >
+          <ion-card-header>
+            <ion-card-title>Scenario 3</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-icon name="sunny" size="large"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card
+          (click)="selectScenario(4)"
+          [class.active]="activeScenario === 4"
+        >
+          <ion-card-header>
+            <ion-card-title>Scenario 4</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-icon name="cloudy" size="large"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card
+          (click)="selectScenario(5)"
+          [class.active]="activeScenario === 5"
+        >
+          <ion-card-header>
+            <ion-card-title>Scenario 5</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-icon name="leaf" size="large"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card
+          (click)="selectScenario(6)"
+          [class.active]="activeScenario === 6"
+        >
+          <ion-card-header>
+            <ion-card-title>Scenario 6</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-icon name="water" size="large"></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
