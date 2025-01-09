@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bluetooth</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Aktuelle Verbindung</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Gerät: <strong>{{ connectedDevice || 'Kein Gerät verbunden' }}</strong></p>
+      <p>Status: <strong>{{ connectionStatus }}</strong></p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Verfügbare Geräte</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let device of availableDevices">
+      <ion-label>{{ device.name || 'Unbekanntes Gerät' }}</ion-label>
+      <ion-button slot="end" (click)="connectToDevice(device)">
+        Verbinden
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" (click)="scanForDevices()">
+    Geräte suchen
+  </ion-button>
+</ion-content>
